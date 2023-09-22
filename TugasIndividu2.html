@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Aritmatika</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif, "Segoe UI", Tahoma, Geneva,
+          Verdana, sans-serif;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+      nav {
+        background-color: #444;
+        padding: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator Aritmatika</h1>
+      <h2>by Gede Bramanda (2255011011)</h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#fibonacci">Deret Fibonacci</a></li>
+        <li><a href="#volume">Perhitungan Volume</a></li>
+      </ul>
+    </nav>
+
+    <section id="fibonacci">
+      <h2>Deret Fibonacci</h2>
+      <p>Klik Dibwah untuk menghitung deret Fibonacci.</p>
+      <button onclick="navigateTo('fibonacci.html')">Hitung Fibonacci</button>
+    </section>
+
+    <section id="volume">
+      <h2>Perhitungan Volume Bangun Ruang</h2>
+      <p>Klik Dibwah untuk menghitung volume berbagai bangun ruang.</p>
+      <button onclick="navigateTo('volume.html')">Hitung Volume</button>
+    </section>
+
+    <script>
+      function navigateTo(page) {
+        window.location.href = page;
+      }
+    </script>
+  </body>
+</html>

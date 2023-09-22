@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Volume Bangun Ruang</title>
+    <script src="Js/volume.js"></script>
+  </head>
+  <body>
+    <h1>Kalkulator Volume Bangun Ruang</h1>
+
+    <label>Pilih jenis bangun ruang:</label><br />
+    <input
+      type="radio"
+      name="jenisBangunRuang"
+      value="balok"
+      onclick="tampilkanInput()"
+    />
+    Balok<br />
+    <input
+      type="radio"
+      name="jenisBangunRuang"
+      value="kubus"
+      onclick="tampilkanInput()"
+    />
+    Kubus<br />
+    <input
+      type="radio"
+      name="jenisBangunRuang"
+      value="bola"
+      onclick="tampilkanInput()"
+    />
+    Bola<br />
+    <input
+      type="radio"
+      name="jenisBangunRuang"
+      value="prisma"
+      onclick="tampilkanInput()"
+    />
+    Prisma<br />
+
+    <div id="inputFields"></div>
+    <br />
+
+    <button onclick="hitungVolume()">Hitung Volume</button>
+
+    <p id="hasil"></p>
+  </body>
+</html>
